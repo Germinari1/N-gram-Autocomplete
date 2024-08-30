@@ -1,6 +1,6 @@
 # N-gram Language Model with Kneser-Ney Smoothing
 
-This project implements an N-gram language model with Kneser-Ney smoothing. It's designed to predict the next word in a sequence based on the previous N-1 words.
+This project implements an N-gram language model with Kneser-Ney smoothing. It's designed to predict the next word in a sequence based on the previous N-1 words, and in the process demonstrate with a simple implementation how probabilistic models can be used for language-related applications based on mathematical principles that are simple to understand.
 
 ## Features
 
@@ -21,7 +21,7 @@ This project implements an N-gram language model with Kneser-Ney smoothing. It's
 
 1. Clone this repository:
    ```
-   git clone 
+   git clone https://github.com/Germinari1/N-gram-Autocomplete.git 
    cd ngram-language-model
    ```
 
@@ -39,15 +39,10 @@ This project implements an N-gram language model with Kneser-Ney smoothing. It's
    ```
 
 ## Usage
-
-1. Prepare your training data:
-   - Place your text corpus in a file named `en_US.twitter.txt` in the project directory.
-
-2. Run the main script:
+Run the main script:
    ```
    python main.py
    ```
-
    This will:
    - Train a new model if no saved model is found
    - Demonstrate sentence completion with example phrases
@@ -59,11 +54,3 @@ You can modify the following parameters in `main.py`:
 - `train_percentage`: The proportion of data to use for training (default: 0.8)
 - `min_freq`: The minimum frequency for a word to be included in the vocabulary (default: 2)
 - `n`: The maximum n-gram size (default: 3)
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
